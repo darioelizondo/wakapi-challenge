@@ -1,0 +1,24 @@
+.challenge {
+	&__image {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		margin: $lh auto;
+		padding: $lh;
+		@include s-min {
+			width: 500px;
+		}
+		@include l-min {
+			width: 100%;
+		}
+	}
+}
+
+.list-database {
+	&__image {
+		display: block;
+		width: 275px;
+		max-width: 100%;
+		margin: $lh auto;
+	}
+}

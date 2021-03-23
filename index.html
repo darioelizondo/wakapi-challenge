@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Challenge Wakapi | Darío Elizondo</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/stylesheets.css">
+</head>
+<body>
+	<div class="challenge">
+		<main class="challenge__main">
+			<div class="challenge__inner global-inner">
+				<div class="challenge__wrapper-image">
+					<img class="challenge__image image--fluid" src="images/hand-1.png" alt="Hola">
+				</div>
+				<div class="challenge__wrapper-content">
+					<h2 class="challenge__title">
+						Bienvenido
+					</h2>
+					<div class="challenge__wrapper-form">
+						<form id="contactForm" class="challenge__form" action="">
+							<div class="challenge__wrapper-input">
+								<label class="challenge__label">Nombre y apellido</label>
+								<input id="userName" class="challenge__input" type="text" name="name" placeholder="Ej: Juan Catulo">
+								<p id="errorName" class="challenge__error-validation"></p>
+							</div>
+							<div class="challenge__wrapper-input">
+								<label class="challenge__label">Fecha de nacimiento</label>
+								<input id="userDateOfBirth" class="challenge__input" type="date" name="dateofbirth">
+								<p id="errorDateOfBirth" class="challenge__error-validation"></p>
+							</div>
+							<div class="challenge__wrapper-input">
+								<label class="challenge__label">País</label>
+								<select id="userCountry"  class="challenge__select" name="country">
+									<option class="challenge__option" value="">Seleccion su país</option>
+									<option class="challenge__option" value="argentina">Argentina</option>
+									<option class="challenge__option" value="bolivia">Bolivia</option>
+									<option class="challenge__option" value="brasil">Brasil</option>
+									<option class="challenge__option" value="chile">Chile</option>
+									<option class="challenge__option" value="colombia">Colombia</option>
+									<option class="challenge__option" value="ecuador">Ecuador</option>
+									<option class="challenge__option" value="guyana">Guyana</option>
+									<option class="challenge__option" value="paraguay">Paraguay</option>
+									<option class="challenge__option" value="peru">Perú</option>
+									<option class="challenge__option" value="surinam">Surinam</option>
+									<option class="challenge__option" value="trinidadytobago">Trinidad y Tobago</option>
+									<option class="challenge__option" value="uruguay">Uruguay</option>
+									<option class="challenge__option" value="venezuela">Venezuela</option>
+								</select>
+								<p id="errorCountry" class="challenge__error-validation"></p>
+							</div>
+							<div class="challenge__conditions">
+								<a class="challenge__link-conditions links--primary" href="conditions.html">Condiciones y políticas de privacidad.</a>
+							</div>
+							<input id="btnSubmit" class="challenge__submit button--primary" value="Enviar" type="submit">
+						</form>
+					</div>
+				</div>
+				<div class="challenge__wrapper-link-database">
+					<a class="challenge__link-database links--primary" href="list-database.html">Ver base de datos</a>
+				</div>
+			</div>
+		</main>
+	</div>
+	
+	<div class="loading">
+		<div class="loading__desktop active">
+			<img class="loading__image" src="images/hola.gif">
+		</div>
+		<div class="loading__mobile active">
+			<img class="loading__image" src="images/hola.gif">
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="javascripts/main.js"></script>
+	<script src="javascripts/validation.js"></script>
+</body>
+</html>

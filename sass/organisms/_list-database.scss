@@ -1,0 +1,37 @@
+.list-database {
+	background: #cfdbeb;
+	margin: 0 auto;
+	.global-inner {
+		@include l-min {
+			height: auto;
+		}
+	}
+	&__wrapper {
+		margin: 0 auto;
+		width: 90%;
+		@include l-min {
+			width: 800px;
+		}
+		@include xl-min {
+			width: 900px;
+		}
+	}
+	&__wrapper-cover {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		padding: $lh*2 $lh;
+		@include l-min {
+			grid-template-columns: repeat(2,minmax(0,1fr));
+		}
+	}
+	&__wrapper-image,
+	&__wrapper-title {
+		grid-column: span 1;
+		text-align: center;
+	}
+	&__wrapper-link {
+		padding: $lh*1.5 0 $lh*2.5 0;
+		text-align: center;
+	}
+}

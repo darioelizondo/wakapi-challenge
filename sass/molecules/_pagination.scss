@@ -1,0 +1,15 @@
+.list-database {
+	&__pagination {
+		padding: $lh*2 $lh/2;
+		text-align: center;
+	}
+	&__button {
+		display: block;
+		width: 100%;
+		margin: 12px 0;
+		@include l-min {
+			display: inline-block;
+			width: 250px;
+		}
+	}
+}

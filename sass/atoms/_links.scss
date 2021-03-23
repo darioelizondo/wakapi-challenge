@@ -1,0 +1,14 @@
+.challenge {
+	&__wrapper-link-database{
+		padding: $lh*2 0;
+		grid-column: span 1;
+		text-align: center;
+		@include l-min {
+			grid-column: span 2;
+		}
+	}
+	&__link-database {
+		// color: #606060;
+		margin: 0 auto;
+	}
+}

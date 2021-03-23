@@ -1,0 +1,820 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, sass/@config/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, sass/@config/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, sass/@config/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, sass/@config/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, sass/@config/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, sass/@config/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, sass/@config/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, sass/@config/_config.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4, sass/@config/_config.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 8, sass/@config/_config.scss */
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-animation-name: fadeIntro;
+  animation-name: fadeIntro;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeIntro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIntro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 19, sass/@config/_config.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 23, sass/@config/_config.scss */
+button:focus,
+a:focus,
+input:focus {
+  outline: none;
+}
+
+/* line 28, sass/@config/_config.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 31, sass/@config/_config.scss */
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+
+/* line 36, sass/@config/_config.scss */
+.image--fluid {
+  max-width: 100%;
+}
+
+/* line 40, sass/@config/_config.scss */
+.links--primary {
+  display: block;
+  color: #181D35;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: color .4s ease, -webkit-transform .4s ease;
+  transition: color .4s ease, -webkit-transform .4s ease;
+  transition: color .4s ease, transform .4s ease;
+  transition: color .4s ease, transform .4s ease, -webkit-transform .4s ease;
+}
+
+/* line 46, sass/@config/_config.scss */
+.links--primary:hover {
+  color: #60F6E4;
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+/* line 52, sass/@config/_config.scss */
+.button--primary {
+  position: relative;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 18.2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #181D35;
+  background: #60F6E4;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 40px;
+  text-align: center;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+/* line 67, sass/@config/_config.scss */
+.button--primary:hover {
+  color: #ffffff;
+  border-radius: 50px;
+  background: #181D35;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 52, sass/@config/_config.scss */
+  .button--primary {
+    width: 200px;
+    font-size: 14px;
+    line-height: 23.4px;
+  }
+}
+
+/* line 79, sass/@config/_config.scss */
+.button--disable {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 18.2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #606060;
+  background: #CECECE;
+  border-radius: 10px;
+  padding: 12px 40px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 79, sass/@config/_config.scss */
+  .button--disable {
+    width: auto;
+    font-size: 14px;
+    line-height: 23.4px;
+  }
+}
+
+/* line 98, sass/@config/_config.scss */
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #181D35;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 98, sass/@config/_config.scss */
+  h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+/* line 109, sass/@config/_config.scss */
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #181D35;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 109, sass/@config/_config.scss */
+  h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+/* line 120, sass/@config/_config.scss */
+h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #181D35;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 120, sass/@config/_config.scss */
+  h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+/* line 131, sass/@config/_config.scss */
+h5 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #181D35;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 131, sass/@config/_config.scss */
+  h5 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+/* line 142, sass/@config/_config.scss */
+h6 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #181D35;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 142, sass/@config/_config.scss */
+  h6 {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+
+/* line 153, sass/@config/_config.scss */
+p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #181D35;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 153, sass/@config/_config.scss */
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+/* line 1, sass/@config/_grid.scss */
+.global-inner {
+  display: grid;
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/@config/_grid.scss */
+  .global-inner {
+    width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 1, sass/@config/_grid.scss */
+  .global-inner {
+    width: 1100px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 1, sass/@config/_grid.scss */
+  .global-inner {
+    width: 1280px;
+  }
+}
+
+/* line 2, sass/atoms/_image.scss */
+.challenge__image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 26px auto;
+  padding: 26px;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 2, sass/atoms/_image.scss */
+  .challenge__image {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 2, sass/atoms/_image.scss */
+  .challenge__image {
+    width: 100%;
+  }
+}
+
+/* line 18, sass/atoms/_image.scss */
+.list-database__image {
+  display: block;
+  width: 275px;
+  max-width: 100%;
+  margin: 26px auto;
+}
+
+/* line 2, sass/atoms/_title.scss */
+.challenge__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33.8px;
+  text-align: center;
+  padding-bottom: 39px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 2, sass/atoms/_title.scss */
+  .challenge__title {
+    color: #181D35;
+    font-size: 40px;
+    line-height: 49.4px;
+    text-align: left;
+  }
+}
+
+/* line 18, sass/atoms/_title.scss */
+.list-database__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33.8px;
+  text-align: center;
+  padding-bottom: 39px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 18, sass/atoms/_title.scss */
+  .list-database__title {
+    color: #181D35;
+    font-size: 40px;
+    line-height: 49.4px;
+    text-align: left;
+  }
+}
+
+/* line 2, sass/atoms/_label.scss */
+.challenge__label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18.2px;
+  padding-bottom: 13px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 2, sass/atoms/_label.scss */
+  .challenge__label {
+    font-size: 14px;
+    line-height: 20.8px;
+  }
+}
+
+/* line 2, sass/atoms/_links.scss */
+.challenge__wrapper-link-database {
+  padding: 52px 0;
+  grid-column: span 1;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 2, sass/atoms/_links.scss */
+  .challenge__wrapper-link-database {
+    grid-column: span 2;
+  }
+}
+
+/* line 10, sass/atoms/_links.scss */
+.challenge__link-database {
+  margin: 0 auto;
+}
+
+/* line 2, sass/atoms/_error.scss */
+.challenge .error {
+  border-color: red;
+}
+
+/* line 5, sass/atoms/_error.scss */
+.challenge__error-validation {
+  color: red;
+  margin: 13px 0;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 5, sass/atoms/_error.scss */
+  .challenge__error-validation {
+    font-size: 14px;
+  }
+}
+
+/* line 2, sass/molecules/_form.scss */
+.challenge__form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 2, sass/molecules/_form.scss */
+  .challenge__form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-column-gap: 26px;
+  }
+}
+
+/* line 10, sass/molecules/_form.scss */
+.challenge__wrapper-input {
+  grid-column: span 1;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 10, sass/molecules/_form.scss */
+  .challenge__wrapper-input {
+    grid-column: span 2;
+  }
+}
+
+/* line 16, sass/molecules/_form.scss */
+.challenge__input, .challenge__select {
+  display: block;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 18.2px;
+  font-weight: 300;
+  background: transparent;
+  border: solid 1px #DBDBDB;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 18.2px;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 16, sass/molecules/_form.scss */
+  .challenge__input, .challenge__select {
+    font-size: 14px;
+    line-height: 23.4px;
+  }
+}
+
+/* line 34, sass/molecules/_form.scss */
+.challenge__input:hover, .challenge__select:hover {
+  border-color: #60F6E4;
+}
+
+/* line 37, sass/molecules/_form.scss */
+.challenge__input:focus, .challenge__select:focus {
+  border-color: #181D35;
+  font-weight: 500;
+}
+
+/* line 42, sass/molecules/_form.scss */
+.challenge__wrapper-input:nth-child(n+2) {
+  grid-column: span 1;
+}
+
+/* line 45, sass/molecules/_form.scss */
+.challenge__conditions {
+  grid-column: span 1;
+  padding: 13px 0 26px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 45, sass/molecules/_form.scss */
+  .challenge__conditions {
+    grid-column: span 2;
+  }
+}
+
+/* line 52, sass/molecules/_form.scss */
+.challenge__submit {
+  grid-column: span 1;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 52, sass/molecules/_form.scss */
+  .challenge__submit {
+    grid-column: span 2;
+  }
+}
+
+/* line 2, sass/molecules/_table.scss */
+.list-database__table {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-collapse: collapse;
+}
+
+/* line 8, sass/molecules/_table.scss */
+.list-database__thead {
+  background: -webkit-gradient(linear, left top, right top, from(#60f6e4), to(#f5d1fb));
+  background: linear-gradient(90deg, #60f6e4 0%, #f5d1fb 100%);
+  line-height: 2.5;
+  border-radius: 10px;
+}
+
+/* line 13, sass/molecules/_table.scss */
+.list-database__th, .list-database__td {
+  font-size: 14px;
+  text-align: left;
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  padding: .75rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 13, sass/molecules/_table.scss */
+  .list-database__th, .list-database__td {
+    font-size: 16px;
+  }
+}
+
+/* line 24, sass/molecules/_table.scss */
+.list-database__th {
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  line-height: 18px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 24, sass/molecules/_table.scss */
+  .list-database__th {
+    font-size: 16px;
+  }
+}
+
+/* line 2, sass/molecules/_pagination.scss */
+.list-database__pagination {
+  padding: 52px 13px;
+  text-align: center;
+}
+
+/* line 6, sass/molecules/_pagination.scss */
+.list-database__button {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 6, sass/molecules/_pagination.scss */
+  .list-database__button {
+    display: inline-block;
+    width: 250px;
+  }
+}
+
+/* line 2, sass/organisms/_loading.scss */
+.loading__mobile {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("../images/loading-mobile.jpg");
+  background-position: center center;
+  background-attachment: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  -webkit-transition: top .4s ease;
+  transition: top .4s ease;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 2, sass/organisms/_loading.scss */
+  .loading__mobile {
+    display: none;
+  }
+}
+
+/* line 21, sass/organisms/_loading.scss */
+.loading__mobile.active {
+  top: 0;
+}
+
+/* line 25, sass/organisms/_loading.scss */
+.loading__desktop {
+  display: none;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("../images/loading-desktop.jpg");
+  background-position: center center;
+  background-attachment: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  -webkit-transition: top .4s ease;
+  transition: top .4s ease;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 25, sass/organisms/_loading.scss */
+  .loading__desktop {
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
+/* line 45, sass/organisms/_loading.scss */
+.loading__desktop.active {
+  top: 0;
+}
+
+/* line 49, sass/organisms/_loading.scss */
+.loading__image {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 1, sass/organisms/_challenge.scss */
+.challenge {
+  background: #cfdbeb;
+  margin: 0 auto;
+}
+
+/* line 4, sass/organisms/_challenge.scss */
+.challenge .global-inner {
+  grid-template-columns: 1fr;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 52px 26px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 4, sass/organisms/_challenge.scss */
+  .challenge .global-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 78px 52px;
+    height: 100vh;
+  }
+}
+
+/* line 14, sass/organisms/_challenge.scss */
+.challenge__wrapper-image, .challenge__wrapper-content {
+  grid-column: span 1;
+}
+
+/* line 1, sass/organisms/_list-database.scss */
+.list-database {
+  background: #cfdbeb;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 4, sass/organisms/_list-database.scss */
+  .list-database .global-inner {
+    height: auto;
+  }
+}
+
+/* line 9, sass/organisms/_list-database.scss */
+.list-database__wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 9, sass/organisms/_list-database.scss */
+  .list-database__wrapper {
+    width: 800px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 9, sass/organisms/_list-database.scss */
+  .list-database__wrapper {
+    width: 900px;
+  }
+}
+
+/* line 19, sass/organisms/_list-database.scss */
+.list-database__wrapper-cover {
+  display: grid;
+  grid-template-columns: 1fr;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 52px 26px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 19, sass/organisms/_list-database.scss */
+  .list-database__wrapper-cover {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* line 28, sass/organisms/_list-database.scss */
+.list-database__wrapper-image, .list-database__wrapper-title {
+  grid-column: span 1;
+  text-align: center;
+}
+
+/* line 33, sass/organisms/_list-database.scss */
+.list-database__wrapper-link {
+  padding: 39px 0 65px 0;
+  text-align: center;
+}
+
+/* line 1, sass/organisms/_conditions.scss */
+.conditions {
+  background: #cfdbeb;
+  margin: 0 auto;
+}
+
+/* line 4, sass/organisms/_conditions.scss */
+.conditions .global-inner {
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 52px 26px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 4, sass/organisms/_conditions.scss */
+  .conditions .global-inner {
+    padding: 78px 52px;
+    height: 100vh;
+  }
+}
+
+/* line 12, sass/organisms/_conditions.scss */
+.conditions__title {
+  padding-bottom: 52px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 12, sass/organisms/_conditions.scss */
+  .conditions__title {
+    padding-bottom: 78px;
+  }
+}
+
+/* line 18, sass/organisms/_conditions.scss */
+.conditions__text {
+  padding-bottom: 39px;
+}
+
+/* line 21, sass/organisms/_conditions.scss */
+.conditions__link {
+  display: block;
+}

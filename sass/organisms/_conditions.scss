@@ -1,0 +1,24 @@
+.conditions {
+	background: #cfdbeb;
+	margin: 0 auto;
+	.global-inner {
+		align-items: center;
+		padding: $lh*2 $lh;
+		@include l-min {
+			padding: $lh*3 $lh*2;
+			height: 100vh;
+		}
+	}
+	&__title {
+		padding-bottom: $lh*2;
+		@include l-min {
+			padding-bottom: $lh*3;
+		}
+	}
+	&__text {
+		padding-bottom: $lh*1.5;
+	}
+	&__link {
+		display: block;
+	}
+}

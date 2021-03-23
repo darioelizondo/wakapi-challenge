@@ -1,0 +1,58 @@
+.challenge {
+	&__form {
+		display: grid;
+		grid-template-columns: 1fr;
+		@include l-min {
+			grid-template-columns: repeat(2,minmax(0,1fr));
+			grid-column-gap: $lh;
+		}
+	}
+	&__wrapper-input {
+		grid-column: span 1;
+		@include l-min {
+			grid-column: span 2;
+		}
+	}
+	&__input,
+	&__select {
+		display: block;
+		width: 100%;
+		font-family: $ff1;
+		font-size: 12px;
+		line-height: $lh*.7;
+		font-weight: 300;
+		background: transparent;
+		border: solid 1px #DBDBDB;
+		border-radius: 10px;
+		padding: 10px 15px;
+		margin-bottom: $lh*.7;
+		box-sizing: border-box;
+		@include l-min {
+			font-size: 14px;
+			line-height: $lh*.9;
+		}
+		&:hover {
+			border-color: $color_primary;
+		}
+		&:focus {
+			border-color: $color_text;
+			font-weight: 500;
+		}
+	}
+	&__wrapper-input:nth-child(n+2) {
+		grid-column: span 1;
+	}
+	&__conditions {
+		grid-column: span 1;
+		padding: $lh/2 0 $lh 0;
+		@include l-min {
+			grid-column: span 2;
+		}
+	}
+	&__submit {
+		grid-column: span 1;
+		@include l-min {
+			grid-column: span 2;
+		}
+	}
+}

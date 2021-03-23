@@ -1,0 +1,13 @@
+.challenge {
+	.error {
+		border-color: red;
+	}
+	&__error-validation {
+		color: red;
+		margin: $lh/2 0;
+		font-size: 12px;
+		@include l-min {
+			font-size: 14px;
+		}
+	}
+}

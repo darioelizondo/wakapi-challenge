@@ -1,0 +1,13 @@
+.challenge {
+	&__label {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: $lh*.7;
+		padding-bottom: $lh/2;
+		@include l-min {
+			font-size: 14px;
+			line-height: $lh*.8;
+		}
+	}
+}

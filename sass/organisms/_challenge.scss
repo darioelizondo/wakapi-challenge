@@ -1,0 +1,18 @@
+.challenge {
+	background: #cfdbeb;
+	margin: 0 auto;
+	.global-inner {
+		grid-template-columns: 1fr;
+		align-items: center;
+		padding: $lh*2 $lh;
+		@include l-min {
+			grid-template-columns: repeat(2,minmax(0,1fr));
+			padding: $lh*3 $lh*2;
+			height: 100vh;
+		}
+	}
+	&__wrapper-image,
+	&__wrapper-content {
+		grid-column: span 1;
+	}
+}

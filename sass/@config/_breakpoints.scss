@@ -1,0 +1,28 @@
+$breakpoint_1: 640px;
+$breakpoint_2: 1024px;
+$breakpoint_3: 1200px;
+$breakpoint_4: 1440px;
+
+@mixin s-min {
+	@media only screen and (min-width: $breakpoint_1) {
+		@content
+	}
+}
+
+@mixin m-min {
+	@media only screen and (min-width: $breakpoint_2) {
+		@content
+	}
+}
+
+@mixin l-min {
+	@media only screen and (min-width: $breakpoint_3) {
+		@content
+	}
+}
+
+@mixin xl-min {
+	@media only screen and (min-width: $breakpoint_4) {
+		@content
+	}
+}
